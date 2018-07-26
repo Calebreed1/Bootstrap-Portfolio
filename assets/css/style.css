@@ -1,15 +1,12 @@
-/* Content section is always at least the hight of the screen with a negative margin the height of the footer plus it's border. */
 #content {
     background-image: url("http://bit.ly/2gPLxZ4");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-/* Returning the i tag to default after the reset.css file changed it. */
 i { 
     font-style: italic;
 }
-/* Some basic definitions for headers on this site. */
 h1, h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-weight: bold;
@@ -27,25 +24,18 @@ h2 {
     font-size: 1.3em;
     padding-bottom: 25px;
 }
-/* The top bar header with navigation. */
 header {
     width: 100%;
-    /* height: 80px; */
+     height: 80px; 
     background-color: white;
     border-bottom: 4px solid #cccccc;
     font-family: 'Georgia', Times, Times New Roman, serif;
     margin-bottom: 40px;
 }
 
-/* header section { */
-    /* width: 960px; */
-    /* margin: 0 auto; */
-    /* } */
     
     #myName {
         height: 77px;
-        /* padding: 0px 30px 0px 30px; */
-        /* float: left; */
         line-height: 77px;
         background-color: #4aaaa5;
         text-align: center;
@@ -70,27 +60,14 @@ header {
 }
 
 .navButton a {
-    /* padding: 0px 30px 0px 30px; */
     color: #999999;
     text-decoration: none;
 }
-/* The small vertical line separating the nav buttons. */
-/* #portButton a { */
-    /* border-left: 2px solid #efefef; */
-    /* border-right: 2px solid #efefef; */
-/* } */
-/* Sets the width and centers all the content below the header. */
-#bodyContent {
-    /* width: 960px;
-    margin: 0 auto; */
-}
-/* Allows the body content section to grow with the main content section. */
 #bodyContent::after {
     content: "";
     display: block;
     clear: both;
 }
-/* Content displayed in the main box to the left of the screen. */
 #mainContent {
     width: 100%;
     padding: 40px 30px 40px 30px;
@@ -103,7 +80,6 @@ header {
     font-size: 1.2em;
     line-height: 2em;
 }
-/* The following styles are specific to the about me page */
 #mainContent p {
     margin: 16px 0px 16px 0px;
     text-indent: 30px;
@@ -116,21 +92,20 @@ header {
     margin: 0px 20px 10px 0px;
 }
 
-/* The following styles are specific to the portfolio page */
+
 .thumbnail {
     position: relative;
     margin-bottom: 40px;
     cursor: pointer;
     transition: all .8s ease;
 }
-/* Make thumbnail larger when hovered. */
+
 .thumbnail:hover {
     transform: scale(1.1);
+
 }
-/* Maintains aspect ratio of image but does not allow image to be any wider than set amount of pixels. */
-.thumbnail img {
-    /* max-width: 270px; */
-    max-width: 100%;
+    .thumbnail img {
+
 }
 
 .left {
@@ -140,7 +115,7 @@ header {
 .right {
     float: right;
 }
-/* The label on the image. */
+
 .label {
     position: absolute;
     bottom: 20px;
@@ -153,7 +128,6 @@ header {
     font-size: 1.2em;
     background-color: rgba(74, 170, 165, .7);
 }
-/* The following styles are specific to the contact us page */
 form {
     width: 100%;
 }
