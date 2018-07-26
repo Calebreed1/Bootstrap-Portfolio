@@ -1,86 +1,93 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
+    <title>Calebs Portfolio | A portfolio of my work</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../WEEK1/Basic-Portfolio/assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <meta name="author" content="Aaron Michael McNulty">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
-    <div class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 bg-white border-bottom box-shadow">
-        <h1 class="my-0 mr-md-auto font-weight-lg">Caleb Reed</h1>
-        <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="https://calebreed1.github.io/Bootstrap-Portfolio/index.html">About</a>
-            <a class="p-2 text-dark active" href="https://calebreed1.github.io/Bootstrap-Portfolio/portfolio.html">Portfolio</a>
-            <a class="p-2 text-dark" href="https://calebreed1.github.io/Bootstrap-Portfolio/contact.html">Contact</a>
-        </nav>
-    </div>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="paghe-header">
-                    <h2>Portfolio</h2>
-                </div>
-
+    <div id="content">
+        <header>
+            <section class="container-fluid">
                 <div class="row">
-                    <div class="col-4">
-                        <a href="https://calebreed1.github.io/Unit-4-game/">
-                        <img class="dun1" src="assets/images/crystal.jpg" style="width: 175px; height: 175px"
-                            class="rounded">
-                        </a>
+                    <div class="col-md-1 col-sm-auto"></div>
+                    <div class="col-md-4 col-sm-12" id="myName">
+                        Caleb Reed
                     </div>
+                    <div class="col-md-1 col-sm-auto"></div>
+                    <nav class="col-md-6 col-sm-12">
+                        <div class="container">
+                            <div class="row">
+                                <div id="aboutButton" class="navButton col">
+                                    <a href="https://calebreed1.github.io/Bootstrap-Portfolio/">About</a>
+                                </div>
+                                <div id="portButton" class="navButton col">
+                                    <a href="https://calebreed1.github.io/Bootstrap-Portfolio/portfolio.html">Portfolio</a>
+                                </div>
+                                <div id="contactButton" class="navButton col">
+                                    <a href="https://calebreed1.github.io/Bootstrap-Portfolio/contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+              <div class="container" id="bodyContent">
+                    <div class="col-md-8 col-xs-12">
+                        <section id="mainContent">
+                            <h1>Portfolio</h1>
+                            <div class="picSection row">
+                                <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                                    <a href="https://calebreed1.github.io/Unit-4-game/">
+                                    <img src="assets/images/crystal.jpg" alt="crystal">
+                                    <span class="label">Crystal Collector</span>
+                                </a>
+                                </div>
+                                <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                                        <a href="https://calebreed1.github.io/TriviaGame/">
+                                    <img src="assets/images/trivia.png" alt="trivia">
+                                    <span class="label">Trivia</span>
+                                        </a>
+                                </div>
+                            </div>
+                            <div class="picSection row">
+                                <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                                        <a href="https://calebreed1.github.io/GIPHY-API/">
+                                    <img src="assets/images/giphy.png" alt="giphy">
+                                    <span class="label">GIPHY</span>
+                                    </a>
+                                </div>
+                                <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                                        <a href="https://calebreed1.github.io/Train-Scheduler/">
+                                    <img src="assets/images/train.jpg" alt="train">
+                                    <span class="label">Train Scheduler</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picSection row">
+                                <div class="thumbnail col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                                    <img src="assets/images/technics-q-c-640-480-4.jpg" alt="tech">
+                                    <span class="label">Technology</span>
+                                </div>
+                            </div>
+                        </section>
 
-                    <div class="col-6">
-                        <a href="https://calebreed1.github.io/TriviaGame/">
-                        <img class="dun2" src="assets/images/trivia.png" style="width: 175px; height: 175px"
-                            class="rounded">
-                        </a>
-                    </div>
-                    <div class="w-100">
-                    </div>
-
-                    <div class="col-4">
-                            <a href="https://calebreed1.github.io/GIPHY-API/">
-                        <img class="dun3" src="assets/images/giphy.png" style="width: 175px; height: 175px"
-                            class="rounded">
-                            </a>
-                    </div>
-
-                    <div class="col-6">
-                            <a href="https://calebreed1.github.io/Train-Scheduler/">
-                        <img class="dun4" src="assets/images/train.jpg" style="width: 175px; height: 175px"
-                            class="rounded">
-                            </a>
-                    </div>
-
-                    <div class="w-100">
-                    </div>
-
-                    <div class="col-4">
-                        <img class="dun5" src="assets/images/city-q-c-640-480-10.jpg" style="width: 175px; height: 175px"
-                            class="rounded">
                     </div>
                 </div>
             </div>
+
         </div>
-    </div>
+        <footer class="footer">
+            <div class="container- fluid">
+                <span class="text-muted-center">Copyright 2018</span>
 
-    </div>
-    <footer class="footer">
-        <div class="container- fluid">
-            <span class="text-muted-center">Copyright 2018</span>
-
-    </footer>
-    </div>
+        </footer>
+        </div>
 
 
 
